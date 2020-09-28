@@ -16,5 +16,8 @@ generator client {
 model Changelog {
   id    Int     @id @default(autoincrement())
   shas  String
-  content String?
+  repository String?
+  markdown String?
+  html String?
+  branch String?
 }

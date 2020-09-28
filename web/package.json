@@ -13,10 +13,14 @@
     ]
   },
   "dependencies": {
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1",
+    "@material-ui/lab": "^4.0.0-alpha.56",
     "@redwoodjs/forms": "^0.19.1",
     "@redwoodjs/router": "^0.19.1",
     "@redwoodjs/web": "^0.19.1",
     "autoprefixer": "9.8.6",
+    "marked": "^1.1.1",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
@@ -24,7 +28,6 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.0.1",
-    "postcss-loader": "^4.0.2",
-    "tailwindcss": "^1.8.10"
+    "postcss-loader": "^4.0.2"
   }
 }

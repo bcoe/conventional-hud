@@ -68,7 +68,7 @@ steps:
       - --memory
       - 2Gi
       - --set-env-vars
-      - DATABASE_URL=${_DATABASE_URL}
+      - DATABASE_URL=${_DATABASE_URL},GITHUB_TOKEN=${_GITHUB_TOKEN}
       - --add-cloudsql-instances
       - conventional-hud
 

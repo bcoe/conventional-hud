@@ -10,6 +10,10 @@ RUN yarn add @prisma/cli
 RUN yarn prisma generate --schema api/prisma/schema.prisma
 RUN yarn remove @prisma/cli
 
+# Install API dependencies:
+
+RUN cd api; yarn install
+
 # Install dependencies for running function:
 RUN yarn add @redwoodjs/api
 RUN yarn add @redwoodjs/api-server

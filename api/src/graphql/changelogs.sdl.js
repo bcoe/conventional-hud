@@ -1,8 +1,11 @@
 export const schema = gql`
   type Changelog {
     id: Int!
+    branch: String
     shas: String!
-    content: String
+    repository: String
+    markdown: String
+    html: String
   }
 
   type Query {
@@ -11,12 +14,18 @@ export const schema = gql`
 
   input CreateChangelogInput {
     shas: String!
-    content: String
+    branch: String
+    repository: String
+    markdown: String
+    html: String
   }
 
   input UpdateChangelogInput {
     shas: String
-    content: String
+    branch: String
+    repository: String
+    markdown: String
+    html: String
   }
 
   type Mutation {
